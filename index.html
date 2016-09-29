@@ -15,21 +15,21 @@
 <body ng-controller="ngclipboardDemoCtrl">
     <header class="header gradient text-center">
         <h1 class="title">ngclipboard</h1>
-        <h2 class="subtitle">Angularjs directive for <a href="http://zenorocha.github.io/clipboard.js/" style="color: rgb(22, 160, 133); border: medium none;">clipboard.js</a></h2>
+        <h2 class="subtitle">AngularJS指令 <a href="http://zenorocha.github.io/clipboard.js/" style="color: rgb(22, 160, 133); border: medium none;">clipboard.js</a></h2>
         <h2 class="subtitle">一个现代的方法来复制文本到剪贴板，而不使用闪存</h2>
         <p class="gh-btns">
             <iframe style="width:82px;" src="https://ghbtns.com/github-btn.html?user=sachinchoolur&amp;repo=ngclipboard&amp;type=watch&amp;count=false&amp;size=large"
 allowtransparency="true" frameborder="0" scrolling="0" width="152" height="30"></iframe>
             <iframe style="width:82px;" src="https://ghbtns.com/github-btn.html?user=sachinchoolur&amp;repo=ngclipboard&amp;type=fork&amp;count=false&amp;size=large"
 allowtransparency="true" frameborder="0" scrolling="0" width="156" height="30"></iframe>
-            <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://sachinchoolur.github.io/ngclipboard/" data-text="ngclipboard - A modern approach to copy text to clipboard without using flash" data-size="large" data-count="none" data-hashtags="angularjs,javascript">Tweet</a>
+            <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://sachinchoolur.github.io/ngclipboard/" data-text="ngclipboard -现代方法不使用Flash文本复制到剪贴板" data-size="large" data-count="none" data-hashtags="angularjs,javascript">Tweet</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
         </p>
     </header>
 
     <main class="wrap">
 
-        <h1 id="install">Install</h1>
+        <h1 id="install">安装</h1>
 
         <p>你可以得到它 npm.</p>
 
@@ -39,32 +39,32 @@ allowtransparency="true" frameborder="0" scrolling="0" width="156" height="30"><
 
         <pre class="snippet"><code class="js">bower install ngclipboard --save</code></pre>
 
-        <p>如果你不进入包管理，只是 <a href="https://github.com/sachinchoolur/ngclipboard/archive/master.zip">download a ZIP</a> file.</p>
+        <p>如果你不进入包管理，只是 <a href="https://github.com/sachinchoolur/ngclipboard/archive/master.zip">下载 ZIP</a> 文件.</p>
 
-        <h1 id="setup">Setup</h1>
+        <h1 id="setup">安装程序</h1>
 
         <p>第一，包括AngularJS和clipboard.js插入您的文档. </p>
 
         <pre class="snippet"><code class="html">
-&lt;script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"&gt;&lt;/script&gt;
+&lt;script src="//ajax.c2cmalls.com/ajax/libs/angularjs/1.3.14/angular.min.js"&gt;&lt;/script&gt;
 &lt;script src="https://cdn.rawgit.com/zenorocha/clipboard.js/master/dist/clipboard.min.js"&gt;&lt;/script&gt;</code></pre>
 
-        <p>Then Include ngclipboard.js. </p>
+        <p>然后包括 ngclipboard.js. </p>
 
         <pre class="snippet"><code class="html">
 &lt;script src="dist/ngclipboard.min.js"&gt;&lt;/script&gt;</code></pre>
-        <p>Add <code class="js">ngclipboard</code> 对你的模块的依赖</p>
+        <p>添加 <code class="js">ngclipboard</code> 对你的模块的依赖</p>
 
         <pre class="snippet"><code class="js">var myApp = angular.module('app', ['ngclipboard']);</code></pre>
-        <p>Finally, add <code class="js">ngclipboard</code>directive to the wanted html element.</p>
+        <p>最后，添加 <code class="js">ngclipboard</code>指令需要的HTML元素.</p>
         <pre class="snippet"><code class="html">
-&lt;button class="btn" ngclipboard data-clipboard-text="Just because you can doesn't mean you should — clipboard.js"&gt;
-    Copy to clipboard
+&lt;button class="btn" ngclipboard data-clipboard-text="只是因为你可以不意味着你应该 — clipboard.js"&gt;
+    复制到剪贴板
 &lt;/button&gt;</code></pre>
 
-        <h1 id="usage">Usage</h1>
+        <h1 id="usage">使用</h1>
 
-        <p>我们生活在一个 <em>declarative renaissance</em>, 这就是为什么我们决定利用 <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_data_attributes">HTML5 data attributes</a> for better usability.</p>
+        <p>我们生活在一个 <em>declarative renaissance</em>, 这就是为什么我们决定利用 <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_data_attributes">HTML5 数据属性</a> 为更好的可用性.</p>
 
         <h3>从另一个元素复制文本</h3>
 
@@ -97,7 +97,7 @@ allowtransparency="true" frameborder="0" scrolling="0" width="156" height="30"><
 
         <div id="example-action" class="example">
             <div class="input-group">
-                <textarea id="bar" cols="62" rows="5" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga.</textarea>
+                <textarea id="bar" cols="62" rows="5" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">mussum乱数假文cacilds刺激下，看见Abertis。consetis adipiscings埃利蒂斯。我áPRA，然后divoltis porris，帕拉迪丝。paisis，filhis，espiritis Santis。我éFaiz elementum girarzis，NiSi爱欲vermeio，在为MéPRA终止éamistosis QUIS狮子座。manduma pindureta quium DIA噪声温度.</textarea>
             </div>
             <div class="form-actions">
                 <button class="btn" type="button" ngclipboard ngclipboard-success="onSuccess(e);" ngclipboard-error="onError(e);" data-clipboard-action="cut" data-clipboard-target="#bar">
@@ -106,10 +106,10 @@ allowtransparency="true" frameborder="0" scrolling="0" width="156" height="30"><
             </div>
         </div>
 
-        <pre class="snippet"><code class="html">&lt;!-- Target --&gt;
+        <pre class="snippet"><code class="html">&lt;!-- 目标 --&gt;
 &lt;textarea id="bar"&gt;Mussum ipsum cacilds...&lt;/textarea&gt;
 
-&lt;!-- Trigger --&gt;
+&lt;!-- 触发 --&gt;
 &lt;button class="btn" ngclipboard data-clipboard-action="cut" data-clipboard-target="#bar"&gt;
    切到剪贴板
 &lt;/button&gt;</code></pre>
@@ -121,15 +121,15 @@ allowtransparency="true" frameborder="0" scrolling="0" width="156" height="30"><
         <p>事实上，你甚至不需要另一个元素来复制它的内容。你可以只包括一个 <code>data-clipboard-text</code> 在你的触发元素的属性.</p>
 
         <div id="example-text" class="example">
-            <button class="btn" ngclipboard ngclipboard-success="onSuccess(e);" ngclipboard-error="onError(e);" data-clipboard-action="copy" data-clipboard-text="Just because you can doesn't mean you should — clipboard.js">Copy to clipboard</button>
+            <button class="btn" ngclipboard ngclipboard-success="onSuccess(e);" ngclipboard-error="onError(e);" data-clipboard-action="copy" data-clipboard-text="只是因为你可以不意味着你应该— clipboard.js">复制到剪贴板</button>
         </div>
 
-        <pre class="snippet"><code class="html">&lt;!-- Trigger --&gt;
-&lt;button class="btn" ngclipboard data-clipboard-text="Just because you can doesn't mean you should — clipboard.js"&gt;
+        <pre class="snippet"><code class="html">&lt;!-- 触发 --&gt;
+&lt;button class="btn" ngclipboard data-clipboard-text="只是因为你可以不意味着你应该 — clipboard.js"&gt;
     复制到剪贴板
 &lt;/button&gt;</code></pre>
 
-        <h1 id="events">Events</h1>
+        <h1 id="events">事件</h1>
 
         <p>有一些情况下，你想显示一些用户反馈或捕获什么已被选中后的复制/切割操作.</p>
 
@@ -140,7 +140,7 @@ allowtransparency="true" frameborder="0" scrolling="0" width="156" height="30"><
 
 
         <pre class="snippet"><code class="html">
-&lt;button class="btn" ngclipboard ngclipboard-success="onSuccess(e);" ngclipboard-error="onError(e);" data-clipboard-text="Just because you can doesn't mean you should — clipboard.js"&gt;
+&lt;button class="btn" ngclipboard ngclipboard-success="onSuccess(e);" ngclipboard-error="onError(e);" data-clipboard-text="只是因为你可以不意味着你应该 — clipboard.js"&gt;
     复制到剪贴板
 &lt;/button&gt;</code></pre>
 <pre class="snippet"><code class="js">
@@ -164,7 +164,7 @@ $scope.onError = function(e) {
 
         <h1 id="browser-support">Browser Support</h1>
 
-        <p>这个库依赖于两个 <a href="https://developer.mozilla.org/en-US/docs/Web/API/Selection">Selection</a> 和 <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/execCommand">execCommand</a> APIs. The second one is supported in the following browsers.</p>
+        <p>这个库依赖于两个 <a href="https://developer.mozilla.org/en-US/docs/Web/API/Selection">Selection</a> 和 <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/execCommand">exec命令</a> API。第二个在下面的浏览器中支持.</p>
 
         <ul class="support">
             <li>
@@ -188,7 +188,7 @@ $scope.onError = function(e) {
             </li>
         </ul>
 
-        <p>虽然复制/切割操作 <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/execCommand">execCommand</a> 不支持Safari吗（包括手机），它优雅地降低因为 <a href="https://developer.mozilla.org/en-US/docs/Web/API/Selection">Selection</a> 支持.</p>
+        <p>虽然复制/切割操作 <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/execCommand">exec命令</a> 不支持Safari吗（包括手机），它优雅地降低因为 <a href="https://developer.mozilla.org/en-US/docs/Web/API/Selection">Selection</a> 支持.</p>
 
         <p>这意味着你可以显示一个提示说 <code>Copied!</code> when <code>success</code>事件被调用和 <code>Press Ctrl+C to copy</code> 里面 <code>error</code>事件被调用，因为文本已被选中.</p>
 
@@ -223,7 +223,7 @@ $scope.onError = function(e) {
             MIT license
         </p>
     </footer>
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script src="//ajax.c2cmalls.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
     <script src="bower_components/highlightjs/highlight.pack.min.js"></script>
     <script src="dist/clipboard.min.js"></script>
     <script src="dist/ngclipboard.min.js"></script>
