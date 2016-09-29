@@ -8,7 +8,7 @@ angular.module('ngclipboardDemo', ['ngclipboard']).controller('ngclipboardDemoCt
 	    console.info('Text:', e.text);
 	    console.info('Trigger:', e.trigger);
 
-	    showTooltip(e.trigger, 'Copied!');
+	    showTooltip(e.trigger, '已复制!');
     };
 
     $scope.onError = function(e) {
