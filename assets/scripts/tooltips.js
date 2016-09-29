@@ -12,7 +12,7 @@ function showTooltip(elem, msg) {
     elem.setAttribute('aria-label', msg);
 }
 
-// Simplistic detection, do not use it in production
+// 简单的检测，不要在生产中使用
 function fallbackMessage(action) {
     var actionMsg = '';
     var actionKey = (action === 'cut' ? 'X' : 'C');
