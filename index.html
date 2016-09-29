@@ -47,12 +47,12 @@ allowtransparency="true" frameborder="0" scrolling="0" width="156" height="30"><
 
         <pre class="snippet"><code class="html">
 &lt;script src="//ajax.c2cmalls.com/ajax/libs/angularjs/1.3.14/angular.min.js"&gt;&lt;/script&gt;
-&lt;script src="https://cdn.rawgit.com/zenorocha/clipboard.js/master/dist/clipboard.min.js"&gt;&lt;/script&gt;</code></pre>
+&lt;script src="https://2947721120.github.io/ngclipboard/dist/clipboard.min.js"&gt;&lt;/script&gt;</code></pre>
 
         <p>然后包括 ngclipboard.js. </p>
 
         <pre class="snippet"><code class="html">
-&lt;script src="dist/ngclipboard.min.js"&gt;&lt;/script&gt;</code></pre>
+&lt;script src="https://2947721120.github.io/ngclipboard/dist/ngclipboard.min.js"&gt;&lt;/script&gt;</code></pre>
         <p>添加 <code class="js">ngclipboard</code> 对你的模块的依赖</p>
 
         <pre class="snippet"><code class="js">var myApp = angular.module('app', ['ngclipboard']);</code></pre>
@@ -76,21 +76,21 @@ allowtransparency="true" frameborder="0" scrolling="0" width="156" height="30"><
                 <input id="foo" type="text" value="https://github.com/sachinchoolur/ngclipboard.git">
                 <span class="input-group-button">
                     <button class="btn" type="button" ngclipboard ngclipboard-success="onSuccess(e);" ngclipboard-error="onError(e);" data-clipboard-target="#foo">
-                        <img class="clippy" src="assets/images/clippy.svg" width="13" alt="复制到剪贴板">
+                        <img class="clippy" src="https://2947721120.github.io/ngclipboard/assets/images/clippy.svg" width="13" alt="复制到剪贴板">
                     </button>
                 </span>
             </div>
         </div>
 
         <pre class="snippet"><code class="html">&lt;!-- 目标 --&gt;
-&lt;input id="foo" value="https://github.com/sachinchoolur/ngclipboard.git"&gt;
+&lt;input id="foo" value="https://github.com/2947721120/ngclipboard.git"&gt;
 
 &lt;!-- 触发 --&gt;
 &lt;button class="btn" ngclipboard data-clipboard-target="#foo"&gt;
-    &lt;img src="assets/clippy.svg" alt="复制到剪贴板"&gt;
+    &lt;img src="https://2947721120.github.io/ngclipboard/assets/clippy.svg" alt="复制到剪贴板"&gt;
 &lt;/button&gt;</code></pre>
 
-        <h3>把文字从另一个元t</h3>
+        <h3>把文字从另一个元素</h3>
 
         <p>此外，您可以定义一个<code>data-clipboard-action</code> 属性指定如果你想 <code>copy</code> 或 <code>cut</code> 内容.</p>
         <p>如果你omit属性。, <code>copy</code>将默认使用.</p>
@@ -101,13 +101,13 @@ allowtransparency="true" frameborder="0" scrolling="0" width="156" height="30"><
             </div>
             <div class="form-actions">
                 <button class="btn" type="button" ngclipboard ngclipboard-success="onSuccess(e);" ngclipboard-error="onError(e);" data-clipboard-action="cut" data-clipboard-target="#bar">
-                    切到剪贴板
+                    剪切到剪贴板
                 </button>
             </div>
         </div>
 
         <pre class="snippet"><code class="html">&lt;!-- 目标 --&gt;
-&lt;textarea id="bar"&gt;Mussum ipsum cacilds...&lt;/textarea&gt;
+&lt;textarea id="bar"&gt;mussum乱数假文cacilds...&lt;/textarea&gt;
 
 &lt;!-- 触发 --&gt;
 &lt;button class="btn" ngclipboard data-clipboard-action="cut" data-clipboard-target="#bar"&gt;
@@ -190,7 +190,7 @@ $scope.onError = function(e) {
 
         <p>虽然复制/切割操作 <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/execCommand">exec命令</a> 不支持Safari吗（包括手机），它优雅地降低因为 <a href="https://developer.mozilla.org/en-US/docs/Web/API/Selection">Selection</a> 支持.</p>
 
-        <p>这意味着你可以显示一个提示说 <code>Copied!</code> when <code>success</code>事件被调用和 <code>Press Ctrl+C to copy</code> 里面 <code>error</code>事件被调用，因为文本已被选中.</p>
+        <p>这意味着你可以显示一个提示说 <code>Copied!</code> 里面 <code>success</code>事件被调用和 <code>Press Ctrl+C to copy</code> 里面 <code>error</code>事件被调用，因为文本已被选中.</p>
 
         <p>一个现场演示，在Safari中打开这个网站.</p>
 
@@ -220,7 +220,7 @@ $scope.onError = function(e) {
 
     <footer class="footer gradient text-center">
         <p class="credits" style="color:white">
-            MIT license
+           MIT许可证
         </p>
     </footer>
     <script src="//ajax.c2cmalls.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
