@@ -7,7 +7,7 @@ clipboardDemos.on('success', function(e) {
     console.info('Text:', e.text);
     console.info('Trigger:', e.trigger);
 
-    showTooltip(e.trigger, 'Copied!');
+    showTooltip(e.trigger, '已复制!');
 });
 
 clipboardDemos.on('error', function(e) {
