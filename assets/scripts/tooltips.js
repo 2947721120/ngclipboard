@@ -18,7 +18,7 @@ function fallbackMessage(action) {
     var actionKey = (action === 'cut' ? 'X' : 'C');
 
     if(/iPhone|iPad/i.test(navigator.userAgent)) {
-        actionMsg = 'No support :(';
+        actionMsg = '不支持 :(';
     }
     else if (/Mac/i.test(navigator.userAgent)) {
         actionMsg = 'Press ⌘-' + actionKey + ' to ' + action;
