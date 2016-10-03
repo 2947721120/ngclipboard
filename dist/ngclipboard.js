@@ -6,7 +6,7 @@
     var MODULE_NAME = 'ngclipboard';
     var angular, Clipboard;
     
-    // Check for CommonJS support
+    // 检查CommonJS的支持
     if (typeof module === 'object' && module.exports) {
       angular = require('angular');
       Clipboard = require('clipboard');
